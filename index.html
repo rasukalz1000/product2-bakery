@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>ぱんdeらいおん</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:300&display=swap" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- HOMEに戻る用のタグ -->
+	<div id="home-return"></div>
+	<!-- ヘッダー -->
+	<header id="home">
+		<!-- トップメニュー -->
+		<section id="topMenu">
+			<div id="topLogo">
+				<a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+			</div>
+			<!-- ハンバーガーアイコン -->
+			<i class="fa fa-bars" id="show"></i>
+			<!-- メニュー項目 -->
+			<div class="nav-container">
+				<nav id="global-nav">
+					<i class="fas fa-times" id="hide"></i>
+					<ul>
+						<li><a href="#home-return">HOME</a></li>
+						<li><a href="#menu">MENU</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#info">INFO</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+	</header>
+	<!-- メイン -->
+	<main>
+		<!-- メインイメージ -->
+		<section id="mainImg">
+			<div id="store-img">
+				<img src="img/main/2.png" alt="store">
+			</div>
+		</section>
+		<!-- MENU -->
+		<section id="menu">
+			<h1 class="sectionTitle">MENU</h1>
+			<section id="panelContainer1">
+				<div class="pansPanel">
+					<img src="img/anpan.jpg" alt="あんぱん">
+					<p>あんぱん</p>
+				</div>
+				<div class="pansPanel">
+					<img src="img/creampan.png" alt="くりーむぱん">
+					<p>くりーむぱん</p>
+				</div>
+				<div class="pansPanel">
+					<img src="img/kare-pan.jpg" alt="かれーぱん">
+					<p>かれーぱん</p>
+				</div>
+				<div class="pansPanel">
+					<img src="img/meronpan.png" alt="めろんぱん">
+					<p>めろんぱん</p>
+				</div>
+				<div class="pansPanel">
+					<img src="img/tyokokorone.jpg" alt="ちょこころね">
+					<p>ちょこころね</p>
+				</div>
+				<div class="pansPanel">
+					<img src="img/donatu.png" alt="どーなつ">
+					<p>どーなつ</p>
+				</div>
+			</section>
+		</section>
+		<!-- ABOUT -->
+		<section id="about">
+			<h1 class="sectionTitle">ABOUT<br>ーぱんdeらいおんの想いー</h1>
+			<section id="panelContainer2">
+				<section class="hopePanel">
+					<h2>①こだわりの原材料</h2>
+					<img src="img/panel1.png" alt="こだわり" width="100%">
+					<p>当店はこだわり抜いた小麦粉、北海道産『春よ恋』を使用しております。<br>良質な土、恵まれた天候の元で育った小麦粉により、パンがふっくらもちもちに焼き上がります。今までにない食感をお楽しみください。</p>
+				</section>
+				<section class="hopePanel">
+					<h2>②添加物不使用</h2>
+					<img src="img/panel2.png" alt="添加物不使用" width="100%">
+					<p>天然素材のパンをお楽しみいただくために、保存料、着色料、化学合成材料などの添加物は一切使用しておりません。<br>お子様からご年配の方まで、安心してお召し上がれるパンをご提供いたします。</p>
+				</section>
+				<section class="hopePanel">
+					<h2>③より身近に</h2>
+					<img src="img/panel3.png" alt="パンを身近に" width="100%">
+					<p>当店自慢の高品質なパンを多くの人にお召し上がりいただくために、お買い求めやすい価格にて販売しております。<br>また、電話予約も承っておりますので、お気軽にお声がけください。</p>
+				</section>
+			</section>
+		</section>
+		<!-- INFO -->
+		<section id="info">
+			<h1 class="sectionTitle">INFO</h1>
+			<div class="twitter-container">
+				<a class="twitter-timeline" data-width="500" data-height="350" data-theme="light" href="https://twitter.com/kasokumaru?ref_src=twsrc%5Etfw">Tweets by kasokumaru</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+		</section>
+		<!-- CONTACT -->
+		<section id="contact">
+			<h1 class="sectionTitle">CONTACT</h1>
+			<form method="post">
+				<div class="form-group">
+					<label>名前<span class="help-block"></span>
+					<input type="text" placeholder="名前" name="name" class="valid-name">
+					</label>
+				</div>
+				<div class="form-group">
+					<label>E-mail<span class="help-block"></span>
+					<input type="text" placeholder="メールアドレス" name="email" class="valid-email">
+					</label>
+				</div>
+				<div class="form-group">
+					<label>内容<span class="help-block"></span>
+					<textarea name="comment" id="count-text" class="valid-text" cols="30" rows="10"></textarea>
+					</label>
+				</div>
+				<input type="submit" value="送信" name="submit">
+			</form>
+		</section>
+	</main>
+	<!-- フッター -->
+	<footer>
+		<p>&copy; ぱんdeらいおん All Right Reserved.</p>
+	</footer>
+</body>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="main.js"></script>
+<script src="scroll.js"></script>
+<script src="menu.js"></script>
+</html>
